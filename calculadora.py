@@ -21,11 +21,11 @@ while True:
     try:
         opcion = int(input("Ingrese la operación: "))
     except ValueError:
-        print("⚠️ Error: Debe ingresar un número válido.")
+        print("Error: Debe ingresar un número válido.")
         continue
 
     if opcion == 5:
-        print("👋 Chao!")
+        print("Chao!")
         break
 
     elif opcion in [1, 2, 3, 4]:
@@ -33,7 +33,7 @@ while True:
             num1 = float(input("Ingrese el primer número: "))
             num2 = float(input("Ingrese el segundo número: "))
         except ValueError:
-            print("⚠️ Error: Solo se permiten números.")
+            print("Error: Solo se permiten números.")
             continue
 
         if opcion == 1:
@@ -46,4 +46,4 @@ while True:
             print("Resultado:", division(num1, num2))
 
     else:
-        print("⚠️ Opción inválida. Intente de nuevo.")
+        print("Opción inválida. Intente de nuevo.")
